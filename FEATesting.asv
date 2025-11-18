@@ -1,0 +1,29 @@
+
+clear;
+clc;
+
+% Material Properties
+E = 227E9; % Presure on Object (Pascals)
+nu = 0.27; % Dimensionless
+
+p1 = 5E5; % In Pa
+p2 = 4.5E5; % In Pa
+
+% Import Geometry
+model = createpde("structural", "static-solid");
+
+importGeometry(model, "C:\Users\User\Downloads\TopPlate.stl");
+
+%pdegplot(smodel, "FaceLabels","on", "FaceAlpha", 0.5); %Testing
+
+%Convert Geometry to Mesh
+msh = generateMesh(model, "Hmax", 0.01);
+
+%pdeplot3D(model); % Testing Mesh
+
+% Apply FEA Pressure through Young's Modulus and the Poissons Ratio
+structuralProperties(model, YoungsModulus=E, PoissonsRatio=nu);
+
+structuralBC(model, Face=3, Constraint="fixed");
+
+structuralBo
