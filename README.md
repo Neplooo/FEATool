@@ -1,4 +1,5 @@
 # 772 FEA Tool
+
 ## A MATLAB tool for calculating how components react to stress.
 
 For my MATLAB class final project, I was told to design an app. As a result, I ended up desiging an app that allows the user to perform seamless FEA calculations on parts. This was mainly created for my robotics team 772 to create FEA charts for their technical portfolio.
@@ -8,11 +9,13 @@ For my MATLAB class final project, I was told to design an app. As a result, I e
 ### Step 1:
 
 Select from the materials to assign to the part.
+
 <img width="377" height="858" alt="image" src="https://github.com/user-attachments/assets/192d5416-dea6-4a51-8b51-6fade47a26e0" />
 
 ### Step 2:
 
 Select your STL file.
+
 <img width="1503" height="940" alt="image" src="https://github.com/user-attachments/assets/0c35501b-e1c4-44e2-9e65-16293d1b6070" />
 
 ### Step 4:
